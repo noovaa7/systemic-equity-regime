@@ -1,8 +1,5 @@
 # Systematic Equity Regime Model: Momentum & Low-Volatility Pipeline
 
-[![Full Report](https://img.shields.io/badge/PDF-Full_Research_Report-blue.svg)](report.pdf)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](model.py)
-
 ## Executive Summary
 This repository houses a systematic, long-only quantitative equity model backtested across the **NSE500 universe** over a 10-year period (2011–2020). The strategy combines a **dual-factor alpha engine** (12-1M Momentum + 126-day Low Volatility) with a **200-day moving average benchmark regime filter**.
 
@@ -70,15 +67,3 @@ Rebalancing occurs monthly (21 trading days). To avoid turnover drag, the engine
 ![Rolling Outperformance](assets/rolling_outperformance.png)
 
 ---
-
-## Repository Structure
-```text
-├── model.py                # Complete execution engine
-├── report.pdf              # Full 14-page quantitative research paper
-├── README.md               # Executive report and documentation
-└── assets/                 # Strategy performance dashboards
-    ├── strategy_dashboard_2011_2020.png
-    ├── bull_regime_performance.png
-    ├── bear_regime_performance.png
-    ├── bull_vs_bear_comparison.png
-    └── rolling_outperformance.png
